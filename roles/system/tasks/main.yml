@@ -1,0 +1,8 @@
+---
+
+- name: configure hostname and domain system
+  ios_system:
+#    hostname: ios01
+    domain_name: cisco
+    lookup_enabled: yes
+    name_servers: 10.0.0.1

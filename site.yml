@@ -1,0 +1,11 @@
+---
+- hosts: switch1
+  gather_facts: no
+  connection: network_cli
+  
+  roles:
+#   - ping
+#   - system           
+   - banner     
+#   - logging
+#   - vlan

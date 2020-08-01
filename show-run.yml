@@ -1,0 +1,15 @@
+---
+- hosts: devneton
+  gather_facts: no
+  connection: network_cli
+
+  
+  tasks:
+   - name: Show running config   
+     ios_command:
+       
+       commands: 
+         - show run
+     register: run
+
+   - debug: var=run.stdout_lines
